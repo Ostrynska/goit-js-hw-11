@@ -1,21 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <title>Homework 11</title>
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">Search</button>
-    </form>
+    <div class="wrapper">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Look for..."
+        />
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="gallery"></div>
+    <!-- <div class="container" data-action="guard">
+      <button
+        type="button"
+        class="load-more"
+        data-action="load-more"
+        hidden="true"
+      >
+        <span class="spinner"></span>
+        <span class="label"></span>
+      </button> -->
+    <!-- </div> -->
+    <div class="gallery-container">
+      <div class="gallery"></div>
+      <!-- <button type="button" class="btn-load-more is-hidden">Load more</button>
+      <a class="btn-to-top" title="Return to top">
+        <span class="material-icons">arrow_upward</span></a
+      > -->
+    </div>
+
     <script type="module" src="./index.js"></script>
   </body>
 </html>
