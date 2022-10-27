@@ -46,7 +46,7 @@ input {
     border: 1px solid rgba(255, 255, 255, 0.674);
     color: rgb(255, 255, 255);
     border-radius: 4px;
-    /* background-color: transparent; */
+    background-color: transparent;
     font-size: 1em;
 }
 
