@@ -18,6 +18,7 @@ function renderGallery(images) {
         comments,
         downloads,
       } = image;
+
       return `
         <a class="gallery-link" href="${largeImageURL}" width="800" height="600">
           <div class="gallery-item" id="${id}">
@@ -34,6 +35,7 @@ function renderGallery(images) {
     })
     .join('');
 
+  // console.log(markup);
   gallery.insertAdjacentHTML('beforeend', markup);
 
   let simpleLightbox = new SimpleLightbox('.gallery a').refresh();
