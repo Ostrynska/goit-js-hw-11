@@ -2,7 +2,7 @@ import './css/styles.css';
 import Notiflix from 'notiflix';
 import { fetchImages } from './js/fetchImages';
 import { renderGallery } from './js/renderGallery';
-import { onScroll, onToTopBtn } from './js/loadingBtn';
+import { onScroll, onScrollToTopBtn } from './js/loadingBtn';
 
 const refs = {
   form: document.querySelector('#search-form'),
@@ -17,14 +17,13 @@ refs.form.addEventListener('submit', onFormSearch);
 refs.loadMoreBtn.addEventListener('click', onLoadMoreBtn);
 
 onScroll();
-onToTopBtn();
+onScrollToTopBtn();
 
 function onFormSearch(e) {
   e.preventDefault();
   searchImgName = e.currentTarget.searchQuery.value.trim();
   refs.gallery.innerHTML = '';
   page = 1;
-  // console.dir(searchImgName);
   window.scrollTo({ top: 0 });
   refs.loadMoreBtn.classList.add('is-hidden');
 
@@ -59,7 +58,7 @@ function onLoadMoreBtn() {
 
       const totalPages = Math.ceil(data.totalHits / 40);
 
-      if (page > totalPages) {
+      if (page >= totalPages) {
         refs.loadMoreBtn.classList.add('is-hidden');
         Notiflix.Notify.failure(
           "We're sorry, but you've reached the end of search results."
