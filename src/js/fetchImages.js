@@ -3,6 +3,7 @@ export { fetchImages };
 
 const API_KEY = '29966303-d9893c98832d118b1f4c04955';
 const baseUrl = 'https://pixabay.com/api/';
+// console.log(searchImgName);
 
 async function fetchImages(searchImgName, page) {
   return await axios({
