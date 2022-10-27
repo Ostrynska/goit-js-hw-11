@@ -22,6 +22,7 @@ onScrollToTopBtn();
 function onFormSearch(e) {
   e.preventDefault();
   searchImgName = e.currentTarget.searchQuery.value.trim();
+  // console.log(searchImgName);
   refs.gallery.innerHTML = '';
   page = 1;
   window.scrollTo({ top: 0 });
