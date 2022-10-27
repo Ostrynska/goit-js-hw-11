@@ -19,14 +19,14 @@ function renderGallery(images) {
         downloads,
       } = image;
       return `
-        <a class="gallery__link" href="${largeImageURL}" width="800" height="600">
+        <a class="gallery-link" href="${largeImageURL}" width="800" height="600">
           <div class="gallery-item" id="${id}">
-            <img class="gallery-item__img" src="${webformatURL}" alt="${tags}" loading="lazy"/>
+            <img class="gallery-item-img" src="${webformatURL}" alt="${tags}" loading="lazy"/>
             <div class="info">
-              <p class="info-item"><b>Likes</b>${likes}</p>
-              <p class="info-item"><b>Views</b>${views}</p>
-              <p class="info-item"><b>Comments</b>${comments}</p>
-              <p class="info-item"><b>Downloads</b>${downloads}</p>
+              <p class="info-item"><span>Likes</span>${likes}</p>
+              <p class="info-item"><span>Views</span>${views}</p>
+              <p class="info-item"><span>Comments</span>${comments}</p>
+              <p class="info-item"><span>Downloads</span>${downloads}</p>
             </div>
           </div>
         </a>
