@@ -30,7 +30,7 @@ p {
 }
 
 .wrapper {
-    padding-top: 35px;
+    padding-top: 25px;
     padding-bottom: 20px;
     position: fixed;
     background-color: #6532ff;
@@ -61,8 +61,8 @@ input::placeholder {
 .btn {
     background: #f4f3f8;
     position: absolute;
-    width: 46px;
-    height: 44px;
+    width: 44px;
+    height: 42px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -78,18 +78,18 @@ input::placeholder {
 .btn-icon {
     fill: currentColor;
     margin-bottom: 7px;
-    margin-right: 8px;
+    margin-right: 6px;
 }
 
 .btn:hover,
 .btn:focus {
-    background: #1b1c45;
+    background: #3610A6;
     color: rgb(255, 255, 255);
 }
 
 .gallery-container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 25px;
 }
 
@@ -101,7 +101,7 @@ input::placeholder {
 
 .gallery {
     margin-left: -20px;
-    padding-top: 120px;
+    padding-top: 110px;
     justify-content: center;
 }
 
@@ -158,13 +158,13 @@ input::placeholder {
 }
 
 .btn-load-more {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 0;
     margin-left: 12px;
-    /* margin: 25px auto 0 auto; */
+    margin: 25px auto 0 auto;
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
@@ -176,7 +176,7 @@ input::placeholder {
 }
 
 .btn-load-more-icon {
-    margin-left: 10px;
+    margin-left: 5px;
     fill: currentColor;
 }
 
@@ -202,7 +202,7 @@ input::placeholder {
 .btn-to-top::after {
     content: url('../img/top.png');
     position: absolute;
-    bottom: 3px;
+    bottom: 7px;
 }
 
 .btn-to-top--visible {
@@ -212,6 +212,6 @@ input::placeholder {
 
 .btn-load-more:hover,
 .btn-to-top:hover {
-    background-color: #1b1c45;
+    background-color: #3610A6;
     transition: all 0.3s;
 }
