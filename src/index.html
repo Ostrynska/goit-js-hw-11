@@ -14,18 +14,24 @@
           autocomplete="off"
           placeholder="Look for..."
         />
-        <button class="btn" type="submit">Search</button>
+        <button class="btn" type="submit">
+          <svg class="btn-icon" width="24" height="24">
+            <use href="./img/search.svg#search"></use>
+          </svg>
+        </button>
       </form>
     </header>
     <section class="gallery-container">
       <div class="gallery"></div>
-      <button type="button" class="btn-load-more is-hidden">Load more</button>
-      <a class="btn-to-top" title="Return to top">
-        <span class="material-icons"></span
-      ></a>
+      <button type="button" class="btn-load-more is-hidden">
+        Load more
+        <svg class="btn-load-more-icon" width="24" height="24">
+          <use href="./img/load.svg#load"></use>
+        </svg>
+      </button>
+      <a class="btn-to-top" title="To top"></a>
     </section>
 
     <script type="module" src="./index.js"></script>
-    <!-- <script src="/path/to/infinite-scroll.pkgd.min.js"></script> -->
   </body>
 </html>
